@@ -5,6 +5,7 @@ pattern = re.compile('[^a-zA-Z]+')
 dict = {}
 count = 0
 input = input_file.read()
+input_file.close()
 input = re.sub(pattern,'', input)
 for n in input:
     keys = dict.keys()
